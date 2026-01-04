@@ -51,6 +51,8 @@ conda activate tihsnet
 pip install -r requirements.txt
 ```
 
+---
+
 ### 2. Dataset Preparation
 
 Organize the BFDS-2025 dataset using the following directory structure:
@@ -88,6 +90,8 @@ Annotation Description
   The `label` files are used as direct inputs to the training and evaluation pipelines for semantic segmentation.
 
 The conversion from `mask` to `label` is performed using a deterministic RGB-to-index mapping, ensuring consistent class encoding across the dataset.
+
+---
 
 ### 3. Experiment Configuration
 
@@ -151,7 +155,7 @@ Key hyperparameters controlling the training process include:
 - `--model-name`  
   Specifies the network architecture.  
   Supported options include:  
-  `unet`, `unetplusplus`, `manet`, `linknet`, `fpn`, `pspnet`, `deeplabv3`, `deeplabv3plus`, `pan`.
+  **`tihsnet`**, `unet`, `unetplusplus`, `manet`, `linknet`, `fpn`, `pspnet`, `deeplabv3`, `deeplabv3plus`, `pan`, `a2fpn`, `abcnet`, `dinknet34`, `dscnet_pro`, `fasternet`, `newnetrrm`, `segnet`, `transunet`, `segformer-B5`, `u-netformer`.
 
 - `--resume`  
   Path to a checkpoint file for resuming training or performing evaluation.
@@ -163,8 +167,12 @@ Model outputs and experimental logs are saved according to predefined directory 
 
 - In `train.py`, training logs and checkpoints are saved to:
   ```text
-  logs_DeepLabV3Plus/
-
+  logs_TIHSNet/
+  ```
+- In `test.py`, evaluation results and visualization are saved to:
+  ```text
+  results_TIHSNet/mc
+  ```
 ---
 
 ### 4. Model Training
@@ -175,13 +183,26 @@ Train the model using the provided training script:
 python train.py
 ```
 
-### Reproducibility Statement
+---
+
+### 5. Model Evaluation
+
+Evaluate a trained model on the test set:
+
+```bash
+python test.py
+```
+
+---
+
+### 🔁 Reproducibility Statement
 
 - All released resources have been verified for accessibility.
 - The repository includes clear instructions for environment setup, data organization, and experiment execution to support experimental reproducibility.
+- Minor numerical differences may occur due to hardware or framework version variations.”
 - If you encounter any issues accessing the resources or reproducing the results, please open a GitHub Issue.
 
-### Citation and Acknowledgment Policy
+### 📚 Citation and Acknowledgment Policy
 
 If you use **BFDS-2025**, the provided code, or any derived resources in your research, **please cite this paper**.
 
