@@ -21,7 +21,6 @@ Due to data volume, annotation complexity, and ongoing research extensions, the 
 Please request the full dataset by contacting the author via **GitHub Issues (preferred)** or **direct message/email**, as indicated in this repository.
 Contact Email：yingh7727@gmail.com
 
----
 
 ### Code Availability
 
@@ -39,7 +38,6 @@ Additional scripts, configurations, or pretrained models related to extended exp
 
 This section describes the basic workflow for reproducing the main experiments reported in the paper using the released code and publicly available subset of BFDS-2025.
 
----
 
 ### 1. Environment Setup
 
@@ -51,7 +49,6 @@ conda activate tihsnet
 pip install -r requirements.txt
 ```
 
----
 
 ### 2. Dataset Preparation
 
@@ -91,7 +88,7 @@ Annotation Description
 
 The conversion from `mask` to `label` is performed using a deterministic RGB-to-index mapping, ensuring consistent class encoding across the dataset.
 
----
+
 
 ### 3. Experiment Configuration
 
@@ -173,7 +170,7 @@ Model outputs and experimental logs are saved according to predefined directory 
   ```text
   results_TIHSNet/mc
   ```
----
+
 
 ### 4. Model Training
 
@@ -183,7 +180,7 @@ Train the model using the provided training script:
 python train.py
 ```
 
----
+
 
 ### 5. Model Evaluation
 
@@ -195,14 +192,37 @@ python test.py
 
 ---
 
-### 🔁 Reproducibility Statement
+## 🔁 Reproducibility Statement
 
 - All released resources have been verified for accessibility.
 - The repository includes clear instructions for environment setup, data organization, and experiment execution to support experimental reproducibility.
 - Minor numerical differences may occur due to hardware or framework version variations.”
 - If you encounter any issues accessing the resources or reproducing the results, please open a GitHub Issue.
 
-### 📚 Citation and Acknowledgment Policy
+---
+
+## 📚 Citation and Acknowledgment Policy
 
 If you use **BFDS-2025**, the provided code, or any derived resources in your research, **please cite this paper**.
+
+---
+
+## ⚖️ License
+
+### Code License
+
+The source code in this repository is released under the **MIT License**.
+See the `LICENSE` file for full license text.
+
+### Dataset License
+
+The **BFDS-2025 dataset is NOT released under the MIT License**.
+
+- The dataset is provided **for non-commercial academic research purposes only**.
+- Redistribution of the dataset without explicit permission is prohibited.
+- Access to the full dataset requires prior approval from the authors.
+- Any use of the dataset must properly cite the associated publication.
+
+Please refer to the *Data and Code Availability* section for details on dataset access.
+
 
