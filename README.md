@@ -205,6 +205,23 @@ python test.py
 
 If you use **BFDS-2025**, the provided code, or any derived resources in your research, **please cite this paper**.
 
+```bibtex
+@article{MENG2026114129,
+title = {Seeing the unseen: Semantic segmentation and uncertainty quantification for delamination detection in building facades},
+journal = {Engineering Applications of Artificial Intelligence},
+volume = {169},
+pages = {114129},
+year = {2026},
+issn = {0952-1976},
+doi = {https://doi.org/10.1016/j.engappai.2026.114129},
+url = {https://www.sciencedirect.com/science/article/pii/S0952197626004100},
+author = {Yuebo Meng and Guotong Yin and Songtao Ye and Qiaoqiao Wang and Guanghui Liu and Xiaohan Li and Xiaojiao Geng},
+keywords = {Building delamination detection, Thermal gradient attention module, Uncertainty quantification, Location classification},
+abstract = {Accurate detection of delamination in building facades is critical for prolonging service life and ensuring structural safety. Current inspection methodologies heavily rely on manual interpretation, lacking efficiency and intelligent robustness. While infrared thermography provides a non-destructive means for detecting subsurface delamination, its accuracy is often compromised by low thermal contrast under uncontrolled conditions and the absence of uncertainty quantification in deep learning models. To address these limitations, this paper proposes TIHSNet, a novel delamination detection framework based on semantic segmentation and uncertainty quantification. Specifically, a physics-informed thermal gradient attention module is introduced to emphasize thermodynamically meaningful gradients and enable accurate delamination boundary delineation. Subsequently, a dual output mechanism is proposed to simultaneously generate prediction and uncertainty maps, enabling quantitative assessment of predictive reliability and identification of regions requiring expert review. To further enhance spatial localization, visible light images are integrated to capture tile boundary information and support spatial classification of delamination. Experiments were conducted on a self constructed dataset comprising 2102 infrared thermography and visible light images collected from reinforced concrete and brick masonry walls. The results demonstrate that TIHSNet achieves a precision of 96.1%, surpassing traditional thresholding methods with a 27.9% gain, and further outperforming existing deep learning approaches by 10.5%. The uncertainty quantification results further validate the model’s robustness and its ability to support reliable decision making in real world inspection scenarios.}
+}
+
+You can also download the full BibTeX file: [citations.bib](citations.bib)
+
 ---
 
 ## ⚖️ License
