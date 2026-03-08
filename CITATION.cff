@@ -1,0 +1,36 @@
+# CITATION.cff 版本声明
+cff-version: 1.2.0
+# 提示语
+message: "If you use this work in your research, please cite our paper as follows."
+# 论文作者信息
+authors:
+  - family-names: "Meng"
+    given-names: "Yuebo"
+  - family-names: "Yin"
+    given-names: "Guotong"
+  - family-names: "Ye"
+    given-names: "Songtao"
+  - family-names: "Wang"
+    given-names: "Qiaoqiao"
+  - family-names: "Liu"
+    given-names: "Guanghui"
+  - family-names: "Li"
+    given-names: "Xiaohan"
+  - family-names: "Geng"
+    given-names: "Xiaojiao"
+# 论文标题
+title: "Seeing the unseen: Semantic segmentation and uncertainty quantification for delamination detection in building facades"
+# 期刊名称
+journal: "Engineering Applications of Artificial Intelligence"
+# 发表年份
+year: 2026
+# 卷号
+volume: "169"
+# 页码
+pages: "114129"
+# DOI 号
+doi: "10.1016/j.engappai.2026.114129"
+# ISSN 号
+issn: "0952-1976"
+# GitHub 仓库地址
+url: "https://github.com/YGTong/Seeing-the-Unseen"
