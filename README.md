@@ -19,7 +19,7 @@ Due to data volume, annotation complexity, and ongoing research extensions, the 
 
 **Contact for data access:**  
 Please request the full dataset by contacting the author via **GitHub Issues (preferred)** or **direct message/email**, as indicated in this repository.
-Contact Email：yingh7727@gmail.com
+Contact Email：yinguotong@stu.xjtu.edu.cn
 
 
 ### Code Availability
